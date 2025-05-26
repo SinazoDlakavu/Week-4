@@ -10,7 +10,16 @@
             var text1="10";
             var text2="2";
 
-            document.getElementById("outputText").innerHTML=text1+text2;
+            var num1=stringToNumber(text1);
+            var num2=stringToNumber(text2);
+
+            document.getElementById("outputText").innerHTML=num1+num2;
+
+            function stringToNumber(text){
+                return parseInt(text);
+
+            }
+
         </script>
     </body>
 </html>
